@@ -49,15 +49,32 @@ const cats = [
   return (
     <div style={{ padding: '2rem' }}>
       <h2>Big Cats</h2>
+    
+      <div
+        style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(3, 1fr)',
+          gridAutoRows: 'auto',
+          gap: '1.5rem',
+        }}
+      >
+       
+        {cats.slice(0, 3).map((cat) => (
+          <SingleCat key={cat.id} cat={cat} />
+        ))}
+      </div>
 
-      <div style={{
-        display: 'flex',
-        overflow: 'auto',
-        paddingBottom: '1rem',
-        gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
-        gap: '1rem'
-      }}>
-        {cats.map((cat) => (
+      <div
+        style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(4, 1fr)',
+          gridAutoRows: 'auto',
+          gap: '1.5rem',
+          marginTop: '2rem',
+        }}
+      >
+        
+        {cats.slice(3).map((cat) => (
           <SingleCat key={cat.id} cat={cat} />
         ))}
       </div>

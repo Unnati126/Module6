@@ -1,8 +1,6 @@
-
 function SingleCat({ cat }) {
   return (
     <div style={{
-      minWidth: '250px',
       border: '1px solid #ccc',
       borderRadius: '10px',
       padding: '1rem',
