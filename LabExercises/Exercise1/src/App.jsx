@@ -31,7 +31,7 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
 
-      {/* Your Exercise 1 Component */}
+      {/* Exercise 1 Component */}
       <div style={{ marginTop: '30px' }}>
         <Greeting name="John">Welcome to the React lab exercise!</Greeting>
       </div>
