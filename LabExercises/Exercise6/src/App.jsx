@@ -2,6 +2,8 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+import Calculator from './Calculator'
+
 function App() {
 
   return (
@@ -16,8 +18,12 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       
+    <div>
+      <h1>Exercise 3: React Calculator</h1>
+      <Calculator />
+    </div>
     </>
   )
 }
 
-export default App
+export default App;
